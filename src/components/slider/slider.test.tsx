@@ -3,7 +3,7 @@ import CustomSlider from "./slider";
 
 
 describe('CustomSlider', () => {
-    const inputs = { lotCoverage: 50, floorNumber: 10, floorHeight: 10 }
+    const inputs = { lotCoverage: 100, floorNumber: 2, floorHeight: 3 }
     it('slider label displays correct label', () => {
         render(<CustomSlider label='floorHeight' inputs={inputs} updateInputs={() => null} disabled={false} />)
         const sliderElement = screen.getByTestId("slider-label");
